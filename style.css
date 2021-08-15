@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+}
+header{
+    position: relative;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgb(194, 178, 178);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:0px 10px;
+    z-index: 100;
+}
+h1{
+    font-size: 2.5rem;
+    color: white;
+}
+.navbar{
+    width: 55%;
+}
+.navbar-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar-nav li{
+    list-style: none;
+}
+.navbar-nav li a{
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        padding: 10px;
+    }
+.navbar-nav li a:hover{
+        background-color: white;
+        color: skyblue;
+    }
+.dropdown{
+    position: absolute;
+    background-color:rgb(198, 178, 178);
+    display: none;
+    max-width: 420px;
+}
+.dropdown li a{
+        color:white;
+        font-size: 1.5rem;
+}
+.dropdown li a:hover{
+    background-color: rgb(166, 208, 224);
+    color: white;
+}
+.dropdownMenu:hover .dropdown{
+    display: block;
+}
+.dropdown2{
+    position: absolute;
+    left:151px;
+    top:0px;
+    background-color:rgb(198,178,178);
+    list-style: none;
+    display: none;
+}
+.dropdownMenu2:hover .dropdown2{
+    display: block;
+}
+.dropdown3{
+    position: absolute;
+    top: 50px;
+    left: 94px;
+    display: none;
+    list-style: none;
+    background-color:rgb(198,178,178);
+}
+.dropdownMenu3:hover .dropdown3{
+    display: block;
+}
+.dropdownMenu:hover .dropdownBtn,.dropdownMenu2:hover .dropdown2Btn,.dropdownMenu3:hover .dropdown3Btn{
+    background-color: white;
+    color:skyblue;
+}
+.dropdown-content{
+    position: absolute;
+    top: 190px;;
+    left:150px;
+    background-color: rgb(198,178,178);
+    list-style: none;
+    display: none;
+}
+.dropdown4:hover .dropdown-content{
+    display: block;
+}
+.dropdown4:hover .dropdown4Btn{
+    background-color: white;
+    color: skyblue;
+}
+.bg{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height: 100vh;
+    background-image:url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    z-index: 2;
+}
+.h2{
+    position: relative;
+    top:0px;
+    left: 0px;
+    text-align: center;
+    margin-top:250px;
+    font-size: 3.8rem;
+    z-index:20;
+}
+
